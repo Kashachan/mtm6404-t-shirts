@@ -117,8 +117,8 @@ tshirts.forEach((shirt) => {
           stock.textContent = shirt.stock + " left!";
 
           select.innerHTML = "";
-          for ( const j = 1; j <= shirt.stock; j++) {
-            var option = document.createElement("option");
+          for ( let j = 1; j <= shirt.stock; j++) {
+            const option = document.createElement("option");
             option.value = j;
             option.textContent = j;
             select.appendChild(option);
